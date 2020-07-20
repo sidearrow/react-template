@@ -1,3 +1,5 @@
 import React from 'react';
 
-export const App: React.FC = () => <div>App</div>;
+import './styles/index.css';
+
+export const App: React.FC = () => <div id="styledByCSS">StyledByCSS</div>;

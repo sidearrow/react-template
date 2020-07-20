@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "css-loader": "^3.6.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
@@ -17,6 +18,8 @@
     "eslint-plugin-react": "^7.20.3",
     "html-webpack-plugin": "^4.3.0",
     "jest": "^26.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "prettier": "^2.0.5",
     "ts-jest": "^26.1.3",
     "ts-loader": "^8.0.1",
@@ -26,7 +29,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --mode production",
     "start": "webpack-dev-server --port 9000 --watch --mode development ./src"
   }
 }
